@@ -1,8 +1,7 @@
 /*General styles*/
 body {
   font-family: "Montserrat", "Orienta", "Tenor Sans", sans-serif;
-  /*background: linear-gradient(-45deg, #360d00, #4d011e, #013a4e, #015340);*/
-  /*background: linear-gradient(-45deg, #362800, #3f0016, #00293a, #113a00);*/
+  color: white;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
@@ -239,6 +238,18 @@ body {
   z-index: 1;
 }
 
+/*About Content*/
+
+.about__img{
+max-height: 600px;
+border-radius: 8px;
+}
+
+
+
+
+
+
 /* Buttons */
 .custom__btn {
   position: relative;
@@ -298,7 +309,7 @@ body {
   transform: translateX(-50%);
   bottom: -5px;
   width: 30px;
-  height: 10px; 
+  height: 10px;
   border-radius: 10px;
   transition: 0.5s;
   transition-delay: 0s;
@@ -318,7 +329,7 @@ body {
   transform: translateX(-50%);
   top: -5px;
   width: 30px;
-  height: 10px; 
+  height: 10px;
   border-radius: 10px;
   transition: 0.5s;
   transition-delay: 0s;
