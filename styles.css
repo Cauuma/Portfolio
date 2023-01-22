@@ -1,5 +1,6 @@
 /*General styles*/
 body {
+
   font-family: "Montserrat", "Orienta", "Tenor Sans", sans-serif;
   font-size: 18px;
   color: white;
@@ -401,15 +402,29 @@ h6 {
   display: none;
   position: fixed;
   bottom: 40px;
-  right: 200px;
+  right: 20px;
   z-index: 99;
   border-radius: 50%;
   border: 1px solid white;
   background-color: transparent;
   color: white;
   cursor: pointer;
-  padding: 15px;
-  font-size: 1rem;
+  padding: 15px 20px;
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 1860px) {
+  #top__btn {
+    bottom: 40px;
+    right: 200px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #top__btn {
+    bottom: 40px;
+    right: 10px;
+    font-size: 1rem;
+    padding: 12px 15px;
+  }
 }
 /* Footer */
 .glassIco {

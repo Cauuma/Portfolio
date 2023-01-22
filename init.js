@@ -1,8 +1,12 @@
-let topButton = document.getElementById("top__btn");
+let topButton = null;
 
-window.onscroll = function () {
-  scrollFunction();
-};
+document.addEventListener("DOMContentLoaded", function (event) {
+  topButton = document.getElementById("top__btn");
+
+  window.onscroll = function () {
+    scrollFunction();
+  };
+});
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
