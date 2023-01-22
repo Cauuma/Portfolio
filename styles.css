@@ -4,7 +4,7 @@ body {
   font-size: 18px;
   color: white;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 600% 600%;
+  background-size: 1000% 1000%;
   animation: gradient 15s ease infinite;
   height: 100vh;
 }
@@ -36,11 +36,10 @@ h6 {
 .navbar {
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 32px 0 rgba(31, 79, 135, 0.37);
-  backdrop-filter: blur(11.5px);
-  -webkit-backdrop-filter: blur(11.5px);
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 /* Hero */
@@ -196,7 +195,7 @@ h6 {
 }
 
 .glass__box:hover span::before {
-  top: -50px;
+  top: -68px;
   left: 30px;
   width: 100px;
   height: 100px;
@@ -280,6 +279,30 @@ h6 {
   -webkit-text-fill-color: transparent;
 }
 
+/*Project Content*/
+
+.glass__projects {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 79, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  padding: 25px;
+}
+
+.project__img {
+  max-width: 500px;
+  height: auto;
+}
+
+/*Project Certificate Gallery*/
+
+.gallery__img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
 /* Buttons */
 .custom__btn {
   position: relative;
@@ -372,6 +395,22 @@ h6 {
   transition-delay: 0.5s;
 }
 
+/* Scroll Top Button */
+
+#top__btn {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 200px;
+  z-index: 99;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 1rem;
+}
 /* Footer */
 .glassIco {
   --width: 100px;
